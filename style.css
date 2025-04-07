@@ -302,7 +302,12 @@ img {
 
 .feature-content {
   flex: 1;
-  padding: 82px;
+  padding: 82px 82px 82px 0px;
+}
+
+.feature-content-2 {
+  flex: 1;
+  padding: 82px 0px 82px 82px;
 }
 
 .feature-tag-1 {
@@ -583,7 +588,7 @@ img {
 }
 
 .share-description {
-  color: #fff;
+  color: #717171;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -0.64px;

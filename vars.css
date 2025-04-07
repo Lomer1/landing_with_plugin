@@ -1,0 +1,94 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --cardbg: linear-gradient(
+    180deg,
+    rgba(47, 73, 112, 1) 0%,
+    rgba(34, 35, 76, 1) 100%
+  );
+  --cardbg: linear-gradient(
+    180deg,
+    rgba(238, 165, 182, 1) 0%,
+    rgba(166, 55, 81, 1) 100%
+  );
+  --cardbg: linear-gradient(
+    180deg,
+    rgba(165, 190, 238, 1) 0%,
+    rgba(64, 96, 157, 1) 100%
+  );
+  --upry: linear-gradient(
+    180.33deg,
+    rgba(47, 69, 102, 1) 0%,
+    rgba(1, 49, 102, 1) 100%
+  );
+  --smer: linear-gradient(
+    90deg,
+    rgba(238, 165, 182, 1) 0%,
+    rgba(236, 211, 199, 1) 50%,
+    rgba(235, 236, 200, 1) 100%
+  );
+  --stroke-danila: linear-gradient(
+    58.22deg,
+    rgba(65, 13, 73, 0) 0%,
+    rgba(65, 13, 73, 1) 100%
+  );
+  --kalendar: linear-gradient(
+    180deg,
+    rgba(238, 165, 182, 0.4) 0%,
+    rgba(238, 165, 182, 0.24) 100%
+  );
+  --kalendar: linear-gradient(
+    23.48deg,
+    rgba(238, 165, 182, 0) 0%,
+    rgba(238, 165, 182, 1) 100%
+  );
+  --gradientuzhasno: radial-gradient(
+    closest-side,
+    rgba(238, 165, 182, 0.6) 0%,
+    rgba(28, 28, 28, 0.6) 45.15392184257507%
+  );
+  --grafik-vremya-nastroenie: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(165, 203, 238, 1) 0%,
+    rgba(235, 236, 200, 1) 18.399962782859802%,
+    rgba(238, 165, 182, 1) 86.89996600151062%
+  );
+  --ebat-ee-obvodka-na-kartochke-skrin: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(240, 162, 180, 0.18) 6.899963319301605%,
+    rgba(238, 165, 182, 1) 15.999999642372131%,
+    rgba(240, 162, 180, 0.18) 23.89996349811554%,
+    rgba(240, 162, 180, 0.18) 40.50000011920929%,
+    rgba(238, 165, 182, 1) 49.50000047683716%,
+    rgba(243, 159, 179, 0.2) 58.99999737739563%,
+    rgba(238, 165, 182, 0.16) 100%
+  );
+  --gradient-plyusa: linear-gradient(
+    119.89deg,
+    rgba(66, 136, 255, 1) 0%,
+    rgba(0, 94, 255, 1) 100%
+  );
+  --novaya-obvodka-ot-dani: linear-gradient(
+    134.46deg,
+    rgba(255, 255, 255, 0.77) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* Fonts */
+  --h1poppins-font-family: Poppins-Bold, sans-serif;
+  --h1poppins-font-size: 26px;
+  --h1poppins-line-height: 120%;
+  --h1poppins-font-weight: 700;
+  --h1poppins-font-style: normal;
+  --h3poppins-font-family: Poppins-Regular, sans-serif;
+  --h3poppins-font-size: 18px;
+  --h3poppins-line-height: 135%;
+  --h3poppins-font-weight: 400;
+  --h3poppins-font-style: normal;
+
+  /* Effects */
+  --shadow-box-shadow: 0px 4px 50px 0px rgba(238, 165, 182, 0.45),
+    0px 0px 24px 0px rgba(165, 203, 238, 0.4),
+    0px 4px 8px 0px rgba(235, 236, 200, 0.16),
+    0px 4px 20px 0px rgba(236, 200, 217, 0.12);
+}

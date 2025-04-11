@@ -5,6 +5,39 @@
   box-sizing: border-box;
 }
 
+/*Animation*/
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.94) translateY(40px);
+  filter: blur(2px);
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1s ease;
+  will-change: transform, opacity, filter;
+}
+
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  filter: blur(0);
+}
+
+/*------------------------------------------------------*/
+
 body {
   font-family: SF Pro Text, -apple-system, Roboto, Helvetica, sans-serif;
   line-height: 1.5;
@@ -168,7 +201,7 @@ img {
   }
 
   .brand-name {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .main-heading {
@@ -520,12 +553,12 @@ img {
 }
 
 .feature-image-wide-short {
-  width: 355px;
+  width: 100%;
   max-width: 100%;
 }
 
 .feature-image-wide-extra {
-  width: 355px;
+  width: 100%;
   margin-top: 15px;
   max-width: 100%;
 }
@@ -555,9 +588,10 @@ img {
   }
 
   .image-group {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   .feature-image-wide {
@@ -760,14 +794,13 @@ img {
   background-color: #000;
   background-repeat: no-repeat, repeat;
   background-position: center;
-  padding-top: 380px;
   background-size: cover;
 }
 
 .footer-logo {
-  width: 70%;
-  height: 70%;
-  margin-bottom: -15%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -140px;
   text-align: center;
   /*box-shadow: 0px 6.24px 390px 0px rgba(238, 165, 182, 0.16),
     0px 0px 109.2px 0px rgba(165, 203, 238, 1),
@@ -892,7 +925,7 @@ img {
   }
 
   .feature-image {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     order: 2;
   }
 
@@ -938,6 +971,14 @@ img {
     margin-top: 60px;
     flex-direction: column;
 }
+
+.feature-image-medium {
+  width: 40%;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 }
 
 .stress-effects {

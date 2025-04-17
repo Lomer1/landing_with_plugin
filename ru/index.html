@@ -4,23 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./src/favicon.png" type="image/x-icon">
-
-  <script>
-    // Определяем язык браузера
-    const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-  
-    // Проверяем, не находимся ли мы уже на локализованной странице
-    const isAlreadyLocalized = window.location.pathname.startsWith('/ru') || window.location.pathname.startsWith('/en');
-  
-    if (!isAlreadyLocalized) {
-      const langPrefix = userLang.startsWith('ru') ? 'ru' : 'en';
-      window.location.replace(`./${langPrefix}/index.html`);
-    }
-  </script>
-  
+  <link rel="stylesheet" href="../vars.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../src/favicon.png" type="image/x-icon">
 
   <main class="landing-page">
     <header class="header">
@@ -110,7 +96,7 @@
       <div class="challenges-grid">
         <article class="challenge-card modern-world zoom-in">
           <div class="challenge-image">
-            <img src="./src/today_world.png" alt="Modern World" />
+            <img src="../src/today_world.png" alt="Modern World" />
           </div>
           <div class="challenge-content">
             <h3 class="challenge-title fade-in">Современный мир</h3>
@@ -122,7 +108,7 @@
   
         <div class="challenges-column">
           <article class="challenge-card mindfulness zoom-in">
-            <img src="./src/why.png" alt="Mindfulness" class="challenge-img" />
+            <img src="../src/why.png" alt="Mindfulness" class="challenge-img" />
             <div class="challenge-content">
               <h3 class="challenge-title fade-in">Отсутствие осознанности</h3>
               <p class="challenge-description fade-in">Ведет к хроническому напряжению</p>
@@ -130,7 +116,7 @@
           </article>
   
           <article class="challenge-card self-help zoom-in">
-            <img src="./src/helpself.png" alt="Self Help" class="challenge-img" />
+            <img src="../src/helpself.png" alt="Self Help" class="challenge-img" />
             <div class="challenge-content">
               <h3 class="challenge-title fade-in">Нет навыков самопомощи</h3>
               <p class="challenge-description fade-in">
@@ -142,7 +128,7 @@
   
         <article class="challenge-card rest zoom-in">
           <div class="challenge-image">
-            <img src="./src/sleep.png" alt="Rest" />
+            <img src="../src/sleep.png" alt="Rest" />
           </div>
           <div class="challenge-content">
             <h3 class="challenge-title fade-in">Недостаток отдыха и сна</h3>
@@ -178,7 +164,7 @@
           </div>
     
           <div class="center-column fade-in">
-            <img src="./src/klubok.png" class="main-image">
+            <img src="../src/klubok.png" class="main-image">
           </div>
     
           <div class="right-column fade-in">
@@ -225,13 +211,13 @@
             </div>
           </div>
           <div class="feature-image zoom-in">
-            <img src="./src/iPhone_treker.png" alt="Mindfulness Feature" />
+            <img src="../src/iPhone_treker.png" alt="Mindfulness Feature" />
           </div>
         </article>
   
         <article class="feature-card diagnostics">
           <div class="feature-image zoom-in">
-            <img src="./src/iPhone_test.png" alt="Diagnostics Feature" />
+            <img src="../src/iPhone_test.png" alt="Diagnostics Feature" />
           </div>
           <div class="feature-content-2">
             <span class="feature-tag-2 fade-in">Самодиагностика</span>
@@ -267,7 +253,7 @@
             </div>
           </div>
           <div class="feature-image zoom-in">
-            <img src="./src/iPhone_ster.png" alt="Reflection Feature" />
+            <img src="../src/iPhone_ster.png" alt="Reflection Feature" />
           </div>
         </article>
       </div>
@@ -281,47 +267,47 @@
         <div class="features-grid">
           <div class="grid-row">
             <img
-              src="./src/practice.png"
+              src="../src/practice.png"
               class="feature-image_tools feature-image-large zoom-in"
               alt="App feature"
             />
             <div class="image-group">
               <img
-                src="./src/napominananya.png"
+                src="../src/napominananya.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
               <img
-                src="./src/notes.png"
+                src="../src/notes.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
             </div>
             <img
-              src="./src/habbits.png"
+              src="../src/habbits.png"
               class="feature-image_tools feature-image-large zoom-in"
               alt="App feature"
             />
           </div>
           <div class="grid-row">
             <img
-              src="./src/analitic.png"
+              src="../src/analitic.png"
               class="feature-image_tools feature-image-standard zoom-in"
               alt="App feature"
             />
             <img
-              src="./src/feelup.png"
+              src="../src/feelup.png"
               class="feature-image_tools feature-image-wide zoom-in"
               alt="App feature"
             />
             <div class="vertical-image-group zoom-in">
               <img
-                src="./src/pomodoro.png"
+                src="../src/pomodoro.png"
                 class="feature-image_tools feature-image-wide-short zoom-in"
                 alt="App feature"
               />
               <img
-                src="./src/analsituation.png"
+                src="../src/analsituation.png"
                 class="feature-image_tools feature-image-wide-extra zoom-in"
                 alt="App feature"
               />
@@ -329,24 +315,24 @@
           </div>
           <div class="grid-row">
             <img
-              src="./src/dnevnikster.png"
+              src="../src/dnevnikster.png"
               class="feature-image_tools feature-image-standard zoom-in"
               alt="App feature"
             />
             <div class="image-group">
               <img
-                src="./src/widgets.png"
+                src="../src/widgets.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
               <img
-                src="./src/calendar.png"
+                src="../src/calendar.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
             </div>
             <img
-              src="./src/testbeka.png"
+              src="../src/testbeka.png"
               class="feature-image_tools feature-image-standard zoom-in"
               alt="App feature"
             />
@@ -365,7 +351,7 @@
             меняетесь со временем
           </p>
         </div>
-        <img src="./src/share.png" alt="Share Results" class="share-image zoom-in" />
+        <img src="../src/share.png" alt="Share Results" class="share-image zoom-in" />
       </div>
     </section>
   
@@ -373,7 +359,7 @@
       <h2 class="team-title fade-in">Делаем мир чуточку лучше</br>небольшой командой</h2>
       <div class="team-grid">
         <article class="team-member">
-          <img src="./src/team/danilla.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/danilla.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Данила Ивашин</h3>
             <p class="member-role fade-in">Со-основатель, дизайнер</p>
@@ -381,7 +367,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/ruslan.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/ruslan.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Руслан Садыков</h3>
             <p class="member-role fade-in">Со-основатель, разработчик</p>
@@ -389,7 +375,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/poli.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/poli.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Полина</h3>
             <p class="member-role fade-in">КПТ-психотерапевт</p>
@@ -397,7 +383,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/ksenia.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/ksenia.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Ксения</h3>
             <p class="member-role fade-in">КПТ-психотерапевт</p>
@@ -405,7 +391,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/yaroslav.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/yaroslav.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Николаи Ярослав</h3>
             <p class="member-role fade-in">QA-тестировщик</p>
@@ -413,7 +399,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/kirill.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/kirill.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Кирилл Лихачев</h3>
             <p class="member-role fade-in">Дизайнер</p>
@@ -421,7 +407,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/sasha.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/sasha.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Саша</h3>
             <p class="member-role fade-in">SMM-специалист</p>
@@ -429,7 +415,7 @@
         </article>
   
         <article class="team-member">
-          <img src="./src/team/mihail.JPG" class="member-photo zoom-in"></img>
+          <img src="../src/team/mihail.JPG" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Михаил Смоленцев</h3>
             <p class="member-role fade-in">Дизайнер</p>
@@ -444,11 +430,11 @@
         <div class="testimonials-column">
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">NikSokolova</h3>
@@ -464,11 +450,11 @@
   
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">Sandrasandra18</h3>
@@ -483,11 +469,11 @@
         <div class="testimonials-column">
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">Dasha</h3>
@@ -504,11 +490,11 @@
   
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">jdekse</h3>
@@ -525,11 +511,11 @@
         <div class="testimonials-column">
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">настик26999</h3>
@@ -544,11 +530,11 @@
   
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">healer28765</h3>
@@ -565,7 +551,7 @@
   
     <footer class="footer">
       <div class="footer-logo zoom-in">
-        <img src="./src/footer-logosvg.svg"></img>
+        <img src="../src/footer-logosvg.svg"></img>
       </div>
       <div class="footer-content">
         <div class="footer-cta">
@@ -592,8 +578,8 @@
           
         </div>
         <nav class="footer-links">
-          <a href="termsofuse.html" class="footer-link fade-in">Пользовательское соглашение</a>
-          <a href="privacy.html" class="footer-link fade-in">Политика конфеденциальности </a>
+          <a href="../termsofuse.html" class="footer-link fade-in">Пользовательское соглашение</a>
+          <a href="../privacy.html" class="footer-link fade-in">Политика конфеденциальности </a>
         </nav>
       </div>
     </footer>

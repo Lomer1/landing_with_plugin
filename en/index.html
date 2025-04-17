@@ -4,23 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./src/favicon.png" type="image/x-icon">
-
-  <script>
-    // Определяем язык браузера
-    const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-  
-    // Проверяем, не находимся ли мы уже на локализованной странице
-    const isAlreadyLocalized = window.location.pathname.startsWith('/ru') || window.location.pathname.startsWith('/en');
-  
-    if (!isAlreadyLocalized) {
-      const langPrefix = userLang.startsWith('ru') ? 'ru' : 'en';
-      window.location.replace(`./${langPrefix}/index.html`);
-    }
-  </script>
-  
+  <link rel="stylesheet" href="../vars.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../src/favicon.png" type="image/x-icon">
 
   <main class="landing-page">
     <header class="header">
@@ -67,21 +53,21 @@
           ></path>
         </svg>
       </div>
-      <h1 class="brand-name fade-in">Feel Up — ментальное здоровье</h1>
+      <h1 class="brand-name fade-in">Feel Up — mental health</h1>
     </header>
   
     <section class="content-section">
       <h2 class="main-heading fade-in">
-        <span class="heading-primary">Cлушай себя —</span>
-        <span class="heading-secondary"><br>улучшай самочувствие</span>
+        <span class="heading-primary">Listen to yourself —</span>
+        <span class="heading-secondary"><br>make yourself feel better</span>
       </h2>
   
       <div class="description-container fade-in">
         <span class="description-primary">
-          Отслеживайте настроение, находите внутренний баланс и создавайте
-          полезные привычки с Feel Up.
+          Track your moods, find inner balance and create
+          healthy habits with Feel Up.
         </span>
-        <span class="description-secondary">Начните путь к гармонии уже сегодня!</span>
+        <span class="description-secondary">Start your journey to harmony today!</span>
       </div>
   
       <a href="https://apps.apple.com/au/app/feel-up-mental-health/id6450873870" target="_blank" class="no-underline">
@@ -99,42 +85,42 @@
               fill="white"
             ></path>
           </svg>
-          <span class="button-text">Скачать приложение</span>
+          <span class="button-text">Download app</span>
         </button>
       </a>
       
     </section>
   
     <section class="challenges">
-      <h2 class="section-title fade-in">Почему ментальное здоровье под угрозой?</h2>
+      <h2 class="section-title fade-in">Why is mental health at risk?</h2>
       <div class="challenges-grid">
         <article class="challenge-card modern-world zoom-in">
           <div class="challenge-image">
-            <img src="./src/today_world.png" alt="Modern World" />
+            <img src="../src/today_world_en.png" alt="Modern World" />
           </div>
-          <div class="challenge-content">
-            <h3 class="challenge-title fade-in">Современный мир</h3>
+          <div class="challenge-content" style="margin: 0;">
+            <h3 class="challenge-title fade-in">Modern world</h3>
             <p class="challenge-description fade-in">
-              Требует продуктивности и успеха, создавая давление и выгорание
+              Demands productivity and success, creating pressure and burnout
             </p>
           </div>
         </article>
   
         <div class="challenges-column">
           <article class="challenge-card mindfulness zoom-in">
-            <img src="./src/why.png" alt="Mindfulness" class="challenge-img" />
+            <img src="../src/why_en.png" alt="Mindfulness" class="challenge-img" />
             <div class="challenge-content">
-              <h3 class="challenge-title fade-in">Отсутствие осознанности</h3>
-              <p class="challenge-description fade-in">Ведет к хроническому напряжению</p>
+              <h3 class="challenge-title fade-in">Lack of awareness</h3>
+              <p class="challenge-description fade-in">Leads to chronic tension</p>
             </div>
           </article>
   
           <article class="challenge-card self-help zoom-in">
-            <img src="./src/helpself.png" alt="Self Help" class="challenge-img" />
+            <img src="../src/helpself.png" alt="Self Help" class="challenge-img" />
             <div class="challenge-content">
-              <h3 class="challenge-title fade-in">Нет навыков самопомощи</h3>
+              <h3 class="challenge-title fade-in">No self-help skills</h3>
               <p class="challenge-description fade-in">
-                Их отсутствие приводит к усилению стресса
+                Their absence leads to an increase in stress
               </p>
             </div>
           </article>
@@ -142,12 +128,12 @@
   
         <article class="challenge-card rest zoom-in">
           <div class="challenge-image">
-            <img src="./src/sleep.png" alt="Rest" />
+            <img src="../src/sleep_en.png" alt="Rest" />
           </div>
           <div class="challenge-content">
-            <h3 class="challenge-title fade-in">Недостаток отдыха и сна</h3>
+            <h3 class="challenge-title fade-in">Lack of rest and sleep</h3>
             <p class="challenge-description fade-in">
-              Негативно влияет на психику и стрессоустойчивость
+              Negatively affects mental health and stress tolerance
             </p>
           </div>
         </article>
@@ -158,38 +144,38 @@
       <div class="container">
         <header class="header-stress-effects">
           <div class="header-content">
-            <h2 class="title-medium fade-in">В результате образуется</h2>
-            <h1 class="title-large fade-in">такооой клубок из нитей</h1>
+            <h2 class="title-medium fade-in">The result is the formation of</h2>
+            <h1 class="title-large fade-in">suuuch a ball of yarn</h1>
           </div>
-          <p class="subtitle fade-in">И иногда без психолога его не распутать</p>
+          <p class="subtitle fade-in">And sometimes you can't unravel it without a psychologist.</p>
         </header>
     
         <div class="content-grid">
           <div class="left-column fade-in">
             <article class="info-card">
-              <h3 class="card-title fade-in">Потеря мотивации</h3>
-              <p class="card-description fade-in">Отсутствие сил для работы, общения и саморазвития</p>
+              <h3 class="card-title fade-in">Loss of motivation</h3>
+              <p class="card-description fade-in">Lack of energy for work, communication and self-development</p>
             </article>
     
             <article class="info-card">
-              <h3 class="card-title">Функциональные расстройства</h3>
-              <p class="card-description">Панические атаки, нервные тики, нарушения работы внутренних органов</p>
+              <h3 class="card-title">Functional disorders</h3>
+              <p class="card-description">Panic attacks, nervous tics, internal organ disorders</p>
             </article>
           </div>
     
           <div class="center-column fade-in">
-            <img src="./src/klubok.png" class="main-image">
+            <img src="../src/klubok.png" class="main-image">
           </div>
     
           <div class="right-column fade-in">
             <article class="info-card">
-              <h3 class="card-title">Системные заболевания</h3>
-              <p class="card-description">Повышение риска сердечно-сосудистых болезней, гормональных сбоев, ослабление иммунитета</p>
+              <h3 class="card-title">Systemic diseases</h3>
+              <p class="card-description">Increased risk of cardiovascular disease, hormonal malfunctions, weakened immunity</p>
             </article>
     
             <article class="info-card">
-              <h3 class="card-title">Социальная изоляция</h3>
-              <p class="card-description">Избегание общения, проблемы в личных и рабочих отношениях</p>
+              <h3 class="card-title">Social isolation</h3>
+              <p class="card-description">Avoidance of communication, problems in personal and work relationships</p>
             </article>
           </div>
         </div>
@@ -200,74 +186,74 @@
     <section class="features">
       <div class="features-header">
         <h2 class="features-title fade-in">
-          Заботься о своем ментальном здоровье вместе с Feel Up
+          Take care of your mental health with Feel Up
         </h2>
         <p class="features-subtitle fade-in">
-          Находите баланс, снижайте стресс и улучшайте самочувствие каждый день
+          Find balance, reduce stress and improve your well-being every day
         </p>
       </div>
   
       <div class="features-grid">
         <article class="feature-card mindfulness">
           <div class="feature-content">
-            <span class="feature-tag-1 fade-in">Осознанность</span>
-            <h3 class="feature-title fade-in">Трекер настроения</h3>
+            <span class="feature-tag-1 fade-in">Awareness</span>
+            <h3 class="feature-title fade-in">Mood tracker</h3>
             <p class="feature-description fade-in">
-              Следите за своим состоянием каждый день и находите баланс, чтобы
-              улучшить свое ментальное здоровье
+              Monitor your state of mind every day and find balance to
+              improve your mental health
             </p>
             <div class="feature-tags fade-in">
-              <span class="tag">Анализ эмоций</span>
-              <span class="tag">Графики и статистика</span>
-              <span class="tag">Заметки и размышления</span>
-              <span class="tag">Рекомендации</span>
-              <span class="tag">Напоминания</span>
+              <span class="tag">Analyzing emotions</span>
+              <span class="tag">Graphs and statistics</span>
+              <span class="tag">Notes and reflections</span>
+              <span class="tag">Recommendations</span>
+              <span class="tag">Reminders</span>
             </div>
           </div>
           <div class="feature-image zoom-in">
-            <img src="./src/iPhone_treker.png" alt="Mindfulness Feature" />
+            <img src="../src/iPhone_treker_en.png" alt="Mindfulness Feature" />
           </div>
         </article>
   
         <article class="feature-card diagnostics">
           <div class="feature-image zoom-in">
-            <img src="./src/iPhone_test.png" alt="Diagnostics Feature" />
+            <img src="../src/iPhone_test_en.png" alt="Diagnostics Feature" />
           </div>
           <div class="feature-content-2">
-            <span class="feature-tag-2 fade-in">Самодиагностика</span>
-            <h3 class="feature-title fade-in">Тест на депрессию Бека</h3>
+            <span class="feature-tag-2 fade-in">Self-diagnosis</span>
+            <h3 class="feature-title fade-in">Beck's depression test</h3>
             <p class="feature-description fade-in">
-              Пройдите тест, чтобы лучше понять своё состояние и вовремя получить
-              необходимую поддержку
+              Take the test to better understand your condition and get the support you need in a timely manner.
+              the support you need
             </p>
             <div class="feature-tags fade-in">
-              <span class="tag">Простые вопросы</span>
-              <span class="tag">Научно обоснованный тест</span>
-              <span class="tag">Конфиденциальность</span>
-              <span class="tag">Отслеживание динамики</span>
-              <span class="tag">Персональные результаты</span>
+              <span class="tag">Simple questions</span>
+              <span class="tag">Science-based test</span>
+              <span class="tag">Privacy</span>
+              <span class="tag">Tracking dynamics</span>
+              <span class="tag">Personalized results</span>
             </div>
           </div>
         </article>
   
         <article class="feature-card reflection">
           <div class="feature-content">
-            <span class="feature-tag-3 fade-in">Рефлексия</span>
-            <h3 class="feature-title fade-in">Дневник эмоций СМЭР</h3>
+            <span class="feature-tag-3 fade-in">Reflexion</span>
+            <h3 class="feature-title fade-in">STER Emotion journal</h3>
             <p class="feature-description fade-in">
-              Записывайте свои эмоции, чтобы лучше понять себя и управлять своим
-              настроением каждый день
+              Write down your emotions to better understand yourself and manage your
+              moods every day
             </p>
             <div class="feature-tags fade-in">
-              <span class="tag">Анализ эмоций</span>
-              <span class="tag">Графики и статистика</span>
-              <span class="tag">Заметки и размышления</span>
-              <span class="tag">Рекомендации</span>
-              <span class="tag">Напоминания</span>
+              <span class="tag">Analyzing emotions</span>
+              <span class="tag">Graphs and statistics</span>
+              <span class="tag">Notes and reflections</span>
+              <span class="tag">Recommendations</span>
+              <span class="tag">Reminders</span>
             </div>
           </div>
           <div class="feature-image zoom-in">
-            <img src="./src/iPhone_ster.png" alt="Reflection Feature" />
+            <img src="../src/iPhone_ster_en.png" alt="Reflection Feature" />
           </div>
         </article>
       </div>
@@ -276,52 +262,52 @@
     <section class="features-section">
       <div class="features-container">
         <h1 class="features-heading fade-in">
-          Все инструменты для заботы о себе — в одном приложении
+          All the tools to take care of yourself in one app
         </h1>
         <div class="features-grid">
           <div class="grid-row">
             <img
-              src="./src/practice.png"
+              src="../src/practice.png"
               class="feature-image_tools feature-image-large zoom-in"
               alt="App feature"
             />
             <div class="image-group">
               <img
-                src="./src/napominananya.png"
+                src="../src/napominananya_en.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
               <img
-                src="./src/notes.png"
+                src="../src/notes_en.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
             </div>
             <img
-              src="./src/habbits.png"
+              src="../src/habbits_en.png"
               class="feature-image_tools feature-image-large zoom-in"
               alt="App feature"
             />
           </div>
           <div class="grid-row">
             <img
-              src="./src/analitic.png"
+              src="../src/analitic_en.png"
               class="feature-image_tools feature-image-standard zoom-in"
               alt="App feature"
             />
             <img
-              src="./src/feelup.png"
+              src="../src/feelup_en.png"
               class="feature-image_tools feature-image-wide zoom-in"
               alt="App feature"
             />
             <div class="vertical-image-group zoom-in">
               <img
-                src="./src/pomodoro.png"
+                src="../src/pomodoro_en.png"
                 class="feature-image_tools feature-image-wide-short zoom-in"
                 alt="App feature"
               />
               <img
-                src="./src/analsituation.png"
+                src="../src/analsituation_en.png"
                 class="feature-image_tools feature-image-wide-extra zoom-in"
                 alt="App feature"
               />
@@ -329,24 +315,24 @@
           </div>
           <div class="grid-row">
             <img
-              src="./src/dnevnikster.png"
+              src="../src/dnevnikster_en.png"
               class="feature-image_tools feature-image-standard zoom-in"
               alt="App feature"
             />
             <div class="image-group">
               <img
-                src="./src/widgets.png"
+                src="../src/widgets_en.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
               <img
-                src="./src/calendar.png"
+                src="../src/calendar_en.png"
                 class="feature-image_tools feature-image-medium zoom-in"
                 alt="App feature"
               />
             </div>
             <img
-              src="./src/testbeka.png"
+              src="../src/testbeka_en.png"
               class="feature-image_tools feature-image-standard zoom-in"
               alt="App feature"
             />
@@ -359,122 +345,122 @@
     <section class="share">
       <div class="share-content">
         <div class="share-text">
-          <h2 class="share-title fade-in">Делись результатами</h2>
+          <h2 class="share-title fade-in">Share the results</h2>
           <p class="share-description fade-in">
-            Отправляйте друзьям свои графики настроения, чтобы видеть, как вы
-            меняетесь со временем
+            Send your mood charts to your friends so you can see how you're
+            change over time
           </p>
         </div>
-        <img src="./src/share.png" alt="Share Results" class="share-image zoom-in" />
+        <img src="../src/share_en.png" alt="Share Results" class="share-image zoom-in" />
       </div>
     </section>
   
     <section class="team">
-      <h2 class="team-title fade-in">Делаем мир чуточку лучше</br>небольшой командой</h2>
+      <h2 class="team-title fade-in">Making the world a little better</br> with a small team</h2>
       <div class="team-grid">
         <article class="team-member">
-          <img src="./src/team/danilla.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/danilla.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Данила Ивашин</h3>
-            <p class="member-role fade-in">Со-основатель, дизайнер</p>
+            <p class="member-role fade-in">Co-founder, designer</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/ruslan.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/ruslan.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Руслан Садыков</h3>
-            <p class="member-role fade-in">Со-основатель, разработчик</p>
+            <p class="member-role fade-in">Co-founder, developer</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/poli.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/poli.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Полина</h3>
-            <p class="member-role fade-in">КПТ-психотерапевт</p>
+            <p class="member-role fade-in">CPT therapist</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/ksenia.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/ksenia.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Ксения</h3>
-            <p class="member-role fade-in">КПТ-психотерапевт</p>
+            <p class="member-role fade-in">CPT therapist</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/yaroslav.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/yaroslav.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Николаи Ярослав</h3>
-            <p class="member-role fade-in">QA-тестировщик</p>
+            <p class="member-role fade-in">QA-tester</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/kirill.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/kirill.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Кирилл Лихачев</h3>
-            <p class="member-role fade-in">Дизайнер</p>
+            <p class="member-role fade-in">Designer</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/sasha.jpg" class="member-photo zoom-in"></img>
+          <img src="../src/team/sasha.jpg" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Саша</h3>
-            <p class="member-role fade-in">SMM-специалист</p>
+            <p class="member-role fade-in">SMM-specialist</p>
           </div>
         </article>
   
         <article class="team-member">
-          <img src="./src/team/mihail.JPG" class="member-photo zoom-in"></img>
+          <img src="../src/team/mihail.JPG" class="member-photo zoom-in"></img>
           <div class="member-info">
             <h3 class="member-name fade-in">Михаил Смоленцев</h3>
-            <p class="member-role fade-in">Дизайнер</p>
+            <p class="member-role fade-in">Designer</p>
           </div>
         </article>
       </div>
     </section>
   
     <section class="testimonials">
-      <h2 class="testimonials-title fade-in">Опыт, которым хочется поделиться</h2>
+      <h2 class="testimonials-title fade-in">Experiences to share</h2>
       <div class="testimonials-grid">
         <div class="testimonials-column">
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">NikSokolova</h3>
               <p class="testimonial-text">
-                <span>Спасибо большое за приложение</span>, мое эмоциональное
-                состояние было подвешено, но после того как я начала пользоваться
-                им, то получилось бороться с паническими атаками, неуверенностью в
-                себе и в целом отслеживать свое ментальное здоровье. Большое
-                восхищение командой!
+                <span>Thank you so much for the app</span>, my emotional
+                was in a state of suspended animation, but after I started using it.
+                I've been able to combat panic attacks, insecurity.
+                myself and generally keep track of my mental health. Much
+                admiration for the team!
               </p>
             </div>
           </article>
   
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">Sandrasandra18</h3>
               <p class="testimonial-text">
-                <span>Отлично</span><br />
-                Очень понравилось, что есть возможность пройти тест на депрессию
+                <span>That's great.</span><br />
+                Loved that there was an option to take a depression test
               </p>
             </div>
           </article>
@@ -483,11 +469,11 @@
         <div class="testimonials-column">
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">Dasha</h3>
@@ -504,19 +490,19 @@
   
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">jdekse</h3>
               <p class="testimonial-text">
                 <span>Feel up</span><br />
-                Удобное и функциональное приложение, мне понравилось! Ещё хочу
-                отметить, что работоспособность самого приложения на высшем
-                уровне, все быстро открывается)
+                Convenient and functional app, I loved it! I also want
+                note that the performance of the application itself at the highest level
+                everything opens quickly)
               </p>
             </div>
           </article>
@@ -525,37 +511,37 @@
         <div class="testimonials-column">
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">настик26999</h3>
               <p class="testimonial-text">
-                <span>Все супер</span><br />
-                Невероятно классное приложение! Было бы классно иметь возможность
-                добавить виджеты на айфон, чтобы быстро отмечать
-                привычки/настроение
+                <span>Everything is super</span><br />
+                Incredibly cool app! It would be cool to be able to
+                Add widgets to your iPhone to quickly mark up
+                habits/mood
               </p>
             </div>
           </article>
   
           <article class="testimonial-card zoom-in">
             <div class="rating">
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
-              <img src="./src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
+              <img src="../src/star.png" alt="Star" class="star" />
             </div>
             <div class="testimonial-content">
               <h3 class="user-name">healer28765</h3>
               <p class="testimonial-text">
-                <span>Лучшее предложение для ментального здоровья!</span><br />
-                В наше время крайне обязательно следить за своим здоровьем,
-                спасибо приложению, что помогает держать настроение под контролем.
+                <span>The best offer for mental health!"</span><br />
+                In this day and age, it's extremely imperative to keep an eye on your health,
+                thanks to the app that helps to keep your mood under control.
               </p>
             </div>
           </article>
@@ -565,11 +551,11 @@
   
     <footer class="footer">
       <div class="footer-logo zoom-in">
-        <img src="./src/footer-logosvg.svg"></img>
+        <img src="../src/footer-logosvg.svg"></img>
       </div>
       <div class="footer-content">
         <div class="footer-cta">
-          <h2 class="footer-title fade-in">Начни путь к осознанности прямо сейчас</h2>
+          <h2 class="footer-title fade-in">Start your journey to mindfulness right now</h2>
           <a href="https://apps.apple.com/au/app/feel-up-mental-health/id6450873870" target="_blank" class="no-underline">
             <button class="download-button-white fade-in">
               <svg
@@ -585,15 +571,15 @@
                   fill="black"
                 ></path>
               </svg>
-              <span class="button-text-black">Скачать приложение</span>
+              <span class="button-text-black">Download app</span>
             </button>
           </a>
           
           
         </div>
         <nav class="footer-links">
-          <a href="termsofuse.html" class="footer-link fade-in">Пользовательское соглашение</a>
-          <a href="privacy.html" class="footer-link fade-in">Политика конфеденциальности </a>
+          <a href="../termsofuse.html" class="footer-link fade-in">Terms of use</a>
+          <a href="../privacy.html" class="footer-link fade-in">Privacy policy</a>
         </nav>
       </div>
     </footer>
